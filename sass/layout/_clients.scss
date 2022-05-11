@@ -1,0 +1,27 @@
+.clients-list {
+  @extend %list;
+
+  @include createFlex();
+}
+
+.client-link {
+  transition: border var(--time) var(--function), fill var(--time) var(--function);
+
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--logo-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+  fill: var(--logo-color);
+}
+
+.client-item + .client-item {
+  margin-left: 30px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}

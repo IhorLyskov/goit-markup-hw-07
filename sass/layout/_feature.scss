@@ -1,0 +1,43 @@
+.feature-list {
+  @extend %list;
+
+  @include createFlex(flex, no, no, wrap);
+}
+
+.feature-list .item {
+  width: 270px;
+}
+
+.feature-list .item + .item {
+  margin-left: 30px;
+}
+
+.feature-ico {
+  background-color: var(--team-bg-color);
+  border-radius: 4px;
+  height: 120px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  @include createFlex();
+}
+
+.feature-list .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.feature-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

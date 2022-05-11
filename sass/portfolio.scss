@@ -3,14 +3,11 @@
 @import './utils/mixins';
 @import './base/reset';
 @import './utils/hidden';
-@import './components/section';
 @import './components/container';
+@import './components/section';
 @import './layout/header';
-@import './layout/hero';
-@import './layout/feature';
-@import './layout/work';
-@import './layout/team';
-@import './layout/clients';
+@import './layout/filters';
+@import './layout/projects';
 @import './layout/footer';
 @import './modals/service';
 @import './modals/mailing';

@@ -21,13 +21,14 @@
   border-bottom: 1px solid var(--border-color);
 }
 .header-nav {
-  display: flex;
-  align-items: center;
+  @include createFlex($along: no);
 }
 
 .site-nav {
   @extend %list;
-  display: flex;
+
+  @include createFlex(flex, no, no);
+
   margin-left: 95px;
 }
 
@@ -72,7 +73,8 @@
 }
 
 .auth-nav {
-  display: flex;
+  @include createFlex(flex, no, no);
+
   margin-left: auto;
 }
 
@@ -83,8 +85,7 @@
 .auth-tel {
   transition: color var(--time) var(--function);
 
-  display: flex;
-  align-items: center;
+  @include createFlex($along: no);
 
   padding-top: 32px;
   padding-bottom: 32px;

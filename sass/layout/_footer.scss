@@ -1,0 +1,137 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+
+  background-color: var(--dark-bg-color);
+}
+
+.footer-data {
+  @include createFlex(flex, space-between, no);
+}
+
+.left-middle {
+  @include createFlex(flex, no, no);
+}
+
+.footer-left {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.webstudio-footer {
+  font-family: 'Raleway', Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--webstudio-footer-color);
+  text-decoration: none;
+}
+
+.footer-address {
+  margin-top: 20px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--footer-addr-color);
+}
+
+.footer-tel {
+  transition: color var(--time) var(--function);
+
+  margin-top: 9px;
+
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--footer-tel-color);
+
+  text-decoration: none;
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
+}
+
+.footer-middle {
+  margin-top: 12px;
+}
+
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--footer-addr-color);
+}
+
+.join-soc-list {
+  @extend %list;
+
+  @include createFlex($along: space-between);
+}
+
+.join-soc-item + .join-soc-item {
+  margin-left: 10px;
+}
+
+.join-soc-link {
+  transition: background-color var(--time) var(--function);
+
+  width: 44px;
+  height: 44px;
+  background-color: var(--join-bg-color);
+  border-radius: 50%;
+
+  @include createFlex();
+
+  fill: var(--footer-addr-color);
+}
+
+.join-soc-link:hover,
+.join-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-right {
+  margin-top: 12px;
+  height: 86px;
+}
+
+.mailing-form {
+  @include createFlex($cross: flex-start);
+}
+
+.mailing-form-input {
+  width: 358px;
+  height: 50px;
+
+  margin: 0 12px 0 0;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--btn-text-color);
+  font: inherit;
+}
+
+.mayling-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  @include createFlex($along: no);
+
+  color: rgba(255, 255, 255, 0.6);
+}

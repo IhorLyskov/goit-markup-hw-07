@@ -1,5 +1,12 @@
-@mixin centeredFlex($type: flex) {
+@mixin createFlex($type: flex, $along: center, $cross: center, $wrap: no) {
   display: $type;
-  align-items: center;
-  justify-content: center;
+  @if $along != no {
+    justify-content: $along;
+  }
+  @if $cross != no {
+    align-items: $cross;
+  }
+  @if $wrap != no {
+    flex-wrap: $wrap;
+  }
 }
