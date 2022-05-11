@@ -1,0 +1,109 @@
+.webstudio-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: 'Raleway', Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--webstudio-header-color);
+
+  text-decoration: none;
+}
+
+.webstudio-accent {
+  color: var(--accent-color);
+}
+
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  @extend %list;
+  display: flex;
+  margin-left: 95px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  transition: color var(--time) var(--function);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-color);
+
+  text-decoration: none;
+  position: relative;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .current::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .auth-tel + .auth-tel {
+  margin-left: 50px;
+}
+
+.auth-tel {
+  transition: color var(--time) var(--function);
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: inherit;
+  fill: currentColor;
+  text-decoration: none;
+}
+
+.auth-tel:hover,
+.auth-tel:focus {
+  color: var(--accent-color);
+}
+
+.ico-tel {
+  margin-right: 10px;
+}
