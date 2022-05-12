@@ -28,10 +28,9 @@
 }
 
 .work-text {
-  font-size: 14px;
-  line-height: 1.14;
+  @include createFont(no, 14px, 1.14, 0.03em);
+
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-bg-color);
+  color: $main-bg-color;
 }

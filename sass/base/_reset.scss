@@ -1,9 +1,9 @@
 body {
   font-family: 'Roboto', Tahoma, sans-serif;
   /* Основной цвет - цвет абзацев */
-  color: var(--main-color);
+  color: $main-color;
   /* Основной фон страницы */
-  background-color: var(--main-bg-color);
+  background-color: $main-bg-color;
 }
 
 // ul,

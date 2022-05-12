@@ -3,22 +3,19 @@
   padding-bottom: 25px;
 
   font-family: 'Raleway', Tahoma, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include createFont(700, 26px, 1.19, 0.03em);
 
-  color: var(--webstudio-header-color);
+  color: $webstudio-header-color;
 
   text-decoration: none;
 }
 
 .webstudio-accent {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .header {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid $border-color;
 }
 .header-nav {
   @include createFlex($along: no);
@@ -37,17 +34,14 @@
 }
 
 .site-nav .link {
-  transition: color var(--time) var(--function);
+  transition: color time $function;
 
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include createFont(500, 14px, 1.14, 0.02em);
 
-  color: var(--title-color);
+  color: $title-color;
 
   text-decoration: none;
   position: relative;
@@ -55,7 +49,7 @@
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .site-nav .current::after {
@@ -69,7 +63,7 @@
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .auth-nav {
@@ -83,17 +77,14 @@
 }
 
 .auth-tel {
-  transition: color var(--time) var(--function);
+  transition: color $time $function;
 
   @include createFlex($along: no);
 
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include createFont(500, 14px, 1.14, 0.02em);
 
   color: inherit;
   fill: currentColor;
@@ -102,7 +93,7 @@
 
 .auth-tel:hover,
 .auth-tel:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .ico-tel {

@@ -20,33 +20,30 @@
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: 0px;
-  background-color: var(--team-card-color);
+  background-color: $team-card-color;
 }
 
 .team-add {
   padding-bottom: 94px;
-  background-color: var(--team-bg-color);
+  background-color: $team-bg-color;
 }
 
 .team-list .title {
   margin-top: 0;
   margin-bottom: 10px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include createFont(500, 16px, 1.19, 0.03em);
+
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .team-list .text {
+  @include createFont(no, 16px, 1.19, 0.03em);
+
   margin-top: 0;
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-soc-list {
@@ -60,18 +57,18 @@
 }
 
 .team-soc-link {
-  transition: fill var(--time) var(--function), background-color var(--time) var(--function);
+  transition: fill $time $function, background-color $time $function;
 
   width: 44px;
   height: 44px;
-  background-color: var(--team-card-color);
+  background-color: $team-card-color;
   border-radius: 50%;
   @include createFlex();
-  fill: var(--logo-color);
+  fill: $logo-color;
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--team-card-color);
+  background-color: $accent-color;
+  fill: $team-card-color;
 }

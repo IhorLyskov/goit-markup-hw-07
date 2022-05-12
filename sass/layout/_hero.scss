@@ -4,8 +4,8 @@
   margin: 0 auto;
   text-align: center;
 
-  background-color: var(--dark-bg-color);
-  background-image: linear-gradient(var(--hero-bg-color), var(--hero-bg-color)), url(../images/hero-bg.jpg);
+  background-color: $dark-bg-color;
+  background-image: linear-gradient($hero-bg-color, $hero-bg-color), url(../images/hero-bg.jpg);
 
   background-size: cover;
   background-position: center;
@@ -23,7 +23,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: var(--hero-title-color);
+  color: $hero-title-color;
 }
 
 .hero-btn {
@@ -44,8 +44,8 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  color: var(--btn-text-color);
-  background-color: var(--hero-bg-btn-color);
+  color: $btn-text-color;
+  background-color: $hero-bg-btn-color;
 
   // cursor: pointer;
 }

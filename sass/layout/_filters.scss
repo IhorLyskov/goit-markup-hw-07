@@ -11,8 +11,7 @@
 }
 
 .filter-item .btn {
-  transition: color var(--time) var(--function), background-color var(--time) var(--function),
-    box-shadow var(--time) var(--function);
+  transition: color $time $function, background-color $time $function, box-shadow $time $function;
 
   // -webkit-appearance: none;
   // -moz-appearance: none;
@@ -21,22 +20,21 @@
   padding: 6px 22px;
   border-radius: 4px;
   min-width: 73px;
+
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include createFont(500, 16px, 1.62, 0.03em);
+
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
-  color: var(--title-color);
-  background-color: var(--btn-bg-color);
+  color: $title-color;
+  background-color: $btn-bg-color;
   box-shadow: none;
 }
 
 .filter-item .btn:hover,
 .filter-item .btn:focus,
 .filter-item .btn.current {
-  color: var(--btn-text-color);
-  background-color: var(--accent-color);
+  color: $btn-text-color;
+  background-color: $accent-color;
   box-shadow: 0px 3px 1px 0 rgba(0, 0, 0, 0.1), 0px 1px 2px 0 rgba(0, 0, 0, 0.08), 0px 2px 2px 0 rgba(0, 0, 0, 0.12);
 }

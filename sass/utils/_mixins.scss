@@ -10,3 +10,12 @@
     flex-wrap: $wrap;
   }
 }
+
+@mixin createFont($fw, $fs, $lh, $ls) {
+  @if $fw != no {
+    font-weight: $fw;
+  }
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

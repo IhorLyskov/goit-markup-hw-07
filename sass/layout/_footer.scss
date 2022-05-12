@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   margin: 0 auto;
 
-  background-color: var(--dark-bg-color);
+  background-color: $dark-bg-color;
 }
 
 .footer-data {
@@ -21,42 +21,39 @@
 
 .webstudio-footer {
   font-family: 'Raleway', Tahoma, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--webstudio-footer-color);
+  @include createFont(700, 26px, 1.19, 0.03em);
+
+  color: $webstudio-footer-color;
   text-decoration: none;
 }
 
 .footer-address {
   margin-top: 20px;
 
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include createFont(no, 14px, 1.71, 0.03em);
+
   font-style: normal;
-  color: var(--footer-addr-color);
+  color: $footer-addr-color;
 }
 
 .footer-tel {
-  transition: color var(--time) var(--function);
+  transition: color $time $function;
 
   margin-top: 9px;
 
   display: block;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+
+  @include createFont(no, 14px, 1.71, 0.03em);
+
   font-style: normal;
-  color: var(--footer-tel-color);
+  color: $footer-tel-color;
 
   text-decoration: none;
 }
 
 .footer-tel:hover,
 .footer-tel:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .footer-middle {
@@ -66,12 +63,12 @@
 .footer-title {
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+
+  @include createFont(no, 14px, 1.14, 0.03em);
+
   text-transform: uppercase;
 
-  color: var(--footer-addr-color);
+  color: $footer-addr-color;
 }
 
 .join-soc-list {
@@ -85,21 +82,21 @@
 }
 
 .join-soc-link {
-  transition: background-color var(--time) var(--function);
+  transition: background-color $time $function;
 
   width: 44px;
   height: 44px;
-  background-color: var(--join-bg-color);
+  background-color: $join-bg-color;
   border-radius: 50%;
 
   @include createFlex();
 
-  fill: var(--footer-addr-color);
+  fill: $footer-addr-color;
 }
 
 .join-soc-link:hover,
 .join-soc-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .footer-right {
@@ -122,14 +119,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  color: var(--btn-text-color);
+  color: $btn-text-color;
   font: inherit;
 }
 
 .mayling-form-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include createFont(no, 16px, 1.25, 0.03em);
 
   @include createFlex($along: no);
 
