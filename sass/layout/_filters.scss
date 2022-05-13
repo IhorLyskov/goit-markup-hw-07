@@ -1,7 +1,7 @@
 .filters {
   @extend %list;
 
-  @include createFlex(flex, center, no, wrap);
+  @include createFlex(flex, center, null, wrap);
 
   margin-bottom: 50px;
 }

@@ -7,11 +7,11 @@
 }
 
 .footer-data {
-  @include createFlex(flex, space-between, no);
+  @include createFlex(flex, space-between, null);
 }
 
 .left-middle {
-  @include createFlex(flex, no, no);
+  @include createFlex(flex, null, null);
 }
 
 .footer-left {
@@ -30,7 +30,7 @@
 .footer-address {
   margin-top: 20px;
 
-  @include createFont(no, 14px, 1.71, 0.03em);
+  @include createFont(null, 14px, 1.71, 0.03em);
 
   font-style: normal;
   color: $footer-addr-color;
@@ -43,7 +43,7 @@
 
   display: block;
 
-  @include createFont(no, 14px, 1.71, 0.03em);
+  @include createFont(null, 14px, 1.71, 0.03em);
 
   font-style: normal;
   color: $footer-tel-color;
@@ -64,7 +64,7 @@
   margin-top: 0;
   margin-bottom: 20px;
 
-  @include createFont(no, 14px, 1.14, 0.03em);
+  @include createFont(null, 14px, 1.14, 0.03em);
 
   text-transform: uppercase;
 
@@ -124,9 +124,9 @@
 }
 
 .mayling-form-input::placeholder {
-  @include createFont(no, 16px, 1.25, 0.03em);
+  @include createFont(null, 16px, 1.25, 0.03em);
 
-  @include createFlex($along: no);
+  @include createFlex($along: null);
 
   color: rgba(255, 255, 255, 0.6);
 }

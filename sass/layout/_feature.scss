@@ -1,7 +1,7 @@
 .feature-list {
   @extend %list;
 
-  @include createFlex(flex, no, no, wrap);
+  @include createFlex(flex, null, null, wrap);
 }
 
 .feature-list .item {
@@ -26,7 +26,7 @@
   margin-top: 0px;
   margin-bottom: 10px;
 
-  @include createFont(no, 16px, 1.14, 0.03em);
+  @include createFont(null, 16px, 1.14, 0.03em);
 
   text-transform: uppercase;
   color: $title-color;
@@ -36,5 +36,5 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @include createFont(no, 14px, 1.71, 0.03em);
+  @include createFont(null, 14px, 1.71, 0.03em);
 }

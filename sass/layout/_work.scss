@@ -1,7 +1,7 @@
 .work-list {
   @extend %list;
 
-  @include createFlex(flex, no, no, wrap);
+  @include createFlex(flex, null, null, wrap);
 }
 
 .work-list .item {
@@ -28,7 +28,7 @@
 }
 
 .work-text {
-  @include createFont(no, 14px, 1.14, 0.03em);
+  @include createFont(null, 14px, 1.14, 0.03em);
 
   text-align: center;
   text-transform: uppercase;

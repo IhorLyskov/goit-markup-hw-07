@@ -18,13 +18,13 @@
   border-bottom: 1px solid $border-color;
 }
 .header-nav {
-  @include createFlex($along: no);
+  @include createFlex($along: null);
 }
 
 .site-nav {
   @extend %list;
 
-  @include createFlex(flex, no, no);
+  @include createFlex(flex, null, null);
 
   margin-left: 95px;
 }
@@ -67,7 +67,7 @@
 }
 
 .auth-nav {
-  @include createFlex(flex, no, no);
+  @include createFlex(flex, null, null);
 
   margin-left: auto;
 }
@@ -79,7 +79,7 @@
 .auth-tel {
   transition: color $time $function;
 
-  @include createFlex($along: no);
+  @include createFlex($along: null);
 
   padding-top: 32px;
   padding-bottom: 32px;

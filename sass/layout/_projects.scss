@@ -1,7 +1,7 @@
 .projects {
   @extend %list;
 
-  @include createFlex(flex, no, no, wrap);
+  @include createFlex(flex, null, null, wrap);
 
   margin-bottom: 94px;
 }
@@ -44,7 +44,7 @@
   margin: 0 auto;
   padding: 63px 23px;
   color: $main-bg-color;
-  @include createFont(no, 18px, 1.56, 0.03em);
+  @include createFont(null, 18px, 1.56, 0.03em);
 }
 
 .project-data {
@@ -53,8 +53,8 @@
 
 .project-data-title {
   margin: 0;
- 
-  @include createFont(no, 18px, 2, 0.06em);
+
+  @include createFont(null, 18px, 2, 0.06em);
 
   color: $title-color;
 }
@@ -62,7 +62,7 @@
 .project-data-text {
   margin: 4px 0 0 0;
 
-  @include createFont(no, 16px, 1.88, 0.03em);
+  @include createFont(null, 16px, 1.88, 0.03em);
 }
 
 .project-item:hover {

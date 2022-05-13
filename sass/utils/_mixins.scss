@@ -1,20 +1,12 @@
-@mixin createFlex($type: flex, $along: center, $cross: center, $wrap: no) {
+@mixin createFlex($type: flex, $along: center, $cross: center, $wrap: null) {
   display: $type;
-  @if $along != no {
-    justify-content: $along;
-  }
-  @if $cross != no {
-    align-items: $cross;
-  }
-  @if $wrap != no {
-    flex-wrap: $wrap;
-  }
+  justify-content: $along;
+  align-items: $cross;
+  flex-wrap: $wrap;
 }
 
 @mixin createFont($fw, $fs, $lh, $ls) {
-  @if $fw != no {
-    font-weight: $fw;
-  }
+  font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
   letter-spacing: $ls;

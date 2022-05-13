@@ -10,7 +10,7 @@
   margin-top: 0;
   margin-bottom: 50px;
 
-  @include createFont(no, 36px, 1.17, 0.03em);
+  @include createFont(null, 36px, 1.17, 0.03em);
   text-align: center;
 
   color: $title-color;
