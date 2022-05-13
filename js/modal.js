@@ -9,7 +9,6 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    console.log('toggleModal');
     refs.modal.classList.toggle('is-hidden');
   }
 })();
