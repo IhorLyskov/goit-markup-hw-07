@@ -37,6 +37,26 @@ img {
   margin: -1px;
 }
 
+.webstudio {
+  font-family: "Raleway", Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.webstudio--header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: #000000;
+}
+.webstudio--footer {
+  color: #ffffff;
+}
+.webstudio__span {
+  color: #2196f3;
+}
+
 .section {
   padding-top: 94px;
 }
@@ -83,27 +103,10 @@ img {
   background-color: #188ce8;
 }
 
-.webstudio-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-family: "Raleway", Tahoma, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
-  text-decoration: none;
-}
-
-.webstudio-accent {
-  color: #2196f3;
-}
-
 .header {
   border-bottom: 1px solid #eeeeee;
 }
-
-.header-nav {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,12 +121,10 @@ img {
   display: flex;
   margin-left: 95px;
 }
-
-.site-nav .item + .item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
-
-.site-nav .link {
+.site-nav .site-nav__link {
   -webkit-transition: color time cubic-bezier(0.4, 0, 0.2, 1);
   transition: color time cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 32px;
@@ -136,13 +137,10 @@ img {
   text-decoration: none;
   position: relative;
 }
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .site-nav__link:hover, .site-nav .site-nav__link:focus {
   color: #2196f3;
 }
-
-.site-nav .current::after {
+.site-nav .site-nav__current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -160,12 +158,10 @@ img {
   display: flex;
   margin-left: auto;
 }
-
-.auth-nav .auth-tel + .auth-tel {
+.auth-nav__tel + .auth-nav__tel {
   margin-left: 50px;
 }
-
-.auth-tel {
+.auth-nav__tel {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
@@ -184,13 +180,10 @@ img {
   fill: currentColor;
   text-decoration: none;
 }
-
-.auth-tel:hover,
-.auth-tel:focus {
+.auth-nav__tel:hover, .auth-nav__tel:focus {
   color: #2196f3;
 }
-
-.ico-tel {
+.auth-nav__ico {
   margin-right: 10px;
 }
 
@@ -457,16 +450,6 @@ img {
 .footer-left {
   width: 231px;
   margin-right: 70px;
-}
-
-.webstudio-footer {
-  font-family: "Raleway", Tahoma, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .footer-address {

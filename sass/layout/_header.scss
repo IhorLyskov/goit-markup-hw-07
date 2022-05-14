@@ -1,24 +1,9 @@
-.webstudio-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
-  font-family: 'Raleway', Tahoma, sans-serif;
-  @include createFont(700, 26px, 1.19, 0.03em);
-
-  color: $webstudio-header-color;
-
-  text-decoration: none;
-}
-
-.webstudio-accent {
-  color: $accent-color;
-}
-
 .header {
   border-bottom: 1px solid $border-color;
-}
-.header-nav {
-  @include createFlex($along: null);
+
+  &__nav {
+    @include createFlex($along: null);
+  }
 }
 
 .site-nav {
@@ -27,75 +12,75 @@
   @include createFlex(flex, null, null);
 
   margin-left: 95px;
-}
 
-.site-nav .item + .item {
-  margin-left: 50px;
-}
+  &__item + &__item {
+    margin-left: 50px;
+  }
 
-.site-nav .link {
-  transition: color time $function;
+  & &__link {
+    transition: color time $function;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  @include createFont(500, 14px, 1.14, 0.02em);
+    @include createFont(500, 14px, 1.14, 0.02em);
 
-  color: $title-color;
+    color: $title-color;
 
-  text-decoration: none;
-  position: relative;
-}
+    text-decoration: none;
+    position: relative;
+  }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: $accent-color;
-}
+  & &__link:hover,
+  & &__link:focus {
+    color: $accent-color;
+  }
 
-.site-nav .current::after {
-  content: '';
+  & &__current::after {
+    content: '';
 
-  position: absolute;
-  left: 0;
-  bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $accent-color;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
 }
 
 .auth-nav {
   @include createFlex(flex, null, null);
 
   margin-left: auto;
-}
 
-.auth-nav .auth-tel + .auth-tel {
-  margin-left: 50px;
-}
+  &__tel + &__tel {
+    margin-left: 50px;
+  }
 
-.auth-tel {
-  transition: color $time $function;
+  &__tel {
+    transition: color $time $function;
 
-  @include createFlex($along: null);
+    @include createFlex($along: null);
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  @include createFont(500, 14px, 1.14, 0.02em);
+    @include createFont(500, 14px, 1.14, 0.02em);
 
-  color: inherit;
-  fill: currentColor;
-  text-decoration: none;
-}
+    color: inherit;
+    fill: currentColor;
+    text-decoration: none;
+  }
 
-.auth-tel:hover,
-.auth-tel:focus {
-  color: $accent-color;
-}
+  &__tel:hover,
+  &__tel:focus {
+    color: $accent-color;
+  }
 
-.ico-tel {
-  margin-right: 10px;
+  &__ico {
+    margin-right: 10px;
+  }
 }

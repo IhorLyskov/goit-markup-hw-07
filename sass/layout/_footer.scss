@@ -19,14 +19,6 @@
   margin-right: 70px;
 }
 
-.webstudio-footer {
-  font-family: 'Raleway', Tahoma, sans-serif;
-  @include createFont(700, 26px, 1.19, 0.03em);
-
-  color: $webstudio-footer-color;
-  text-decoration: none;
-}
-
 .footer-address {
   margin-top: 20px;
 
