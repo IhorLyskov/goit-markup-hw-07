@@ -14,14 +14,13 @@
   border-radius: 4px;
   padding: 16px 32px;
   fill: $logo-color;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .client-item + .client-item {
   margin-left: 30px;
-}
-
-.client-link:hover,
-.client-link:focus {
-  border: 1px solid $accent-color;
-  fill: $accent-color;
 }

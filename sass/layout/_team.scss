@@ -2,18 +2,28 @@
   @extend %list;
 
   @include createFlex(flex, null, null, wrap);
-}
 
-.team-list .item {
-  width: 270px;
+  & .item {
+    width: 270px;
 
-  border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 
-.team-list .item + .item {
-  margin-left: 30px;
+  & .item + .item {
+    margin-left: 30px;
+  }
+
+  & .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    @include createFont(500, 16px, 1.19, 0.03em);
+
+    text-align: center;
+    color: $title-color;
+  }
 }
 
 .team {
@@ -26,16 +36,6 @@
 .team-add {
   padding-bottom: 94px;
   background-color: $team-bg-color;
-}
-
-.team-list .title {
-  margin-top: 0;
-  margin-bottom: 10px;
-
-  @include createFont(500, 16px, 1.19, 0.03em);
-
-  text-align: center;
-  color: $title-color;
 }
 
 .team-list .text {
@@ -65,10 +65,9 @@
   border-radius: 50%;
   @include createFlex();
   fill: $logo-color;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: $accent-color;
-  fill: $team-card-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $team-card-color;
+  }
 }
