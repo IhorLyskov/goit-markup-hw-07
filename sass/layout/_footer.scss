@@ -4,121 +4,107 @@
   margin: 0 auto;
 
   background-color: $dark-bg-color;
-}
 
-.footer-data {
-  @include createFlex(flex, space-between, null);
-}
-
-.left-middle {
-  @include createFlex(flex, null, null);
-}
-
-.footer-left {
-  width: 231px;
-  margin-right: 70px;
-}
-
-.footer-address {
-  margin-top: 20px;
-
-  @include createFont(null, 14px, 1.71, 0.03em);
-
-  font-style: normal;
-  color: $footer-addr-color;
-}
-
-.footer-tel {
-  transition: color $time $function;
-
-  margin-top: 9px;
-
-  display: block;
-
-  @include createFont(null, 14px, 1.71, 0.03em);
-
-  font-style: normal;
-  color: $footer-tel-color;
-
-  text-decoration: none;
-}
-
-.footer-tel:hover,
-.footer-tel:focus {
-  color: $accent-color;
-}
-
-.footer-middle {
-  margin-top: 12px;
-}
-
-.footer-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-
-  @include createFont(null, 14px, 1.14, 0.03em);
-
-  text-transform: uppercase;
-
-  color: $footer-addr-color;
-}
-
-.join-soc-list {
-  @extend %list;
-
-  @include createFlex($along: space-between);
-}
-
-.join-soc-item + .join-soc-item {
-  margin-left: 10px;
-}
-
-.join-soc-link {
-  transition: background-color $time $function;
-
-  width: 44px;
-  height: 44px;
-  background-color: $join-bg-color;
-  border-radius: 50%;
-
-  @include createFlex();
-
-  fill: $footer-addr-color;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
+  &__data {
+    @include createFlex(flex, space-between, null);
   }
-}
 
-.footer-right {
-  margin-top: 12px;
-  height: 86px;
+  &__left-middle {
+    @include createFlex(flex, null, null);
+  }
+
+  &__left {
+    width: 231px;
+    margin-right: 70px;
+  }
+
+  &__address {
+    margin-top: 20px;
+
+    @include createFont(null, 14px, 1.71, 0.03em);
+
+    font-style: normal;
+    color: $footer-addr-color;
+  }
+
+  &__tel {
+    transition: color $time $function;
+
+    margin-top: 9px;
+
+    display: block;
+
+    @include createFont(null, 14px, 1.71, 0.03em);
+
+    font-style: normal;
+    color: $footer-tel-color;
+
+    text-decoration: none;
+  }
+
+  &__tel:hover,
+  &__tel:focus {
+    color: $accent-color;
+  }
+
+  &__middle {
+    margin-top: 12px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @include createFont(null, 14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+
+    color: $footer-addr-color;
+  }
+
+  &__right {
+    margin-top: 12px;
+    height: 86px;
+  }
 }
 
 .mailing-form {
   @include createFlex($cross: flex-start);
-}
 
-.mailing-form-input {
-  width: 358px;
-  height: 50px;
+  &__input {
+    width: 358px;
+    height: 50px;
 
-  margin: 0 12px 0 0;
-  padding: 15px 16px;
+    margin: 0 12px 0 0;
+    padding: 15px 16px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  color: $btn-text-color;
-  font: inherit;
-}
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: $btn-text-color;
+    font: inherit;
+  }
 
-.mayling-form-input::placeholder {
-  @include createFont(null, 16px, 1.25, 0.03em);
+  &__input::placeholder {
+    @include createFont(null, 16px, 1.25, 0.03em);
 
-  @include createFlex($along: null);
+    @include createFlex($along: null);
 
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+  }
 }

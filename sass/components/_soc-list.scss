@@ -1,0 +1,38 @@
+.soc-list {
+  @extend %list;
+  @include createFlex();
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    @include createFlex();
+  }
+
+  &__link--team {
+    transition: fill $time $function, background-color $time $function;
+
+    background-color: $team-card-color;
+    fill: $logo-color;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $team-card-color;
+    }
+  }
+
+  &__link--footer {
+    transition: background-color $time $function;
+
+    background-color: $join-bg-color;
+    fill: $footer-addr-color;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}

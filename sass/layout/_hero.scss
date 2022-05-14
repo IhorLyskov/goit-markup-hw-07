@@ -11,14 +11,14 @@
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1600px;
-}
 
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
 
-  @include createFont(900, 44px, 1.36, 0.06em);
-  text-transform: uppercase;
+    @include createFont(900, 44px, 1.36, 0.06em);
+    text-transform: uppercase;
 
-  color: $hero-title-color;
+    color: $hero-title-color;
+  }
 }

@@ -1,17 +1,17 @@
 .section {
   padding-top: 94px;
-}
 
-.section-padding-bottom {
-  padding-bottom: 94px;
-}
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
 
-.section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
+    @include createFont(null, 36px, 1.17, 0.03em);
+    text-align: center;
 
-  @include createFont(null, 36px, 1.17, 0.03em);
-  text-align: center;
+    color: $title-color;
+  }
 
-  color: $title-color;
+  &--padding-bottom {
+    padding-bottom: 94px;
+  }
 }

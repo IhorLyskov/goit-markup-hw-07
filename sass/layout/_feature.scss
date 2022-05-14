@@ -1,17 +1,17 @@
-.feature-list {
+.feature {
   @extend %list;
 
   @include createFlex(flex, null, null, wrap);
 
-  & .item {
+  &__item {
     width: 270px;
   }
 
-  & .item + .item {
+  &__item + &__item {
     margin-left: 30px;
   }
 
-  & .title {
+  &__title {
     margin-top: 0px;
     margin-bottom: 10px;
 
@@ -21,20 +21,20 @@
     color: $title-color;
   }
 
-  & .text {
+  &__text {
     margin-top: 0;
     margin-bottom: 0;
 
     @include createFont(null, 14px, 1.71, 0.03em);
   }
-}
 
-.feature-ico {
-  background-color: $team-bg-color;
-  border-radius: 4px;
-  height: 120px;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  &__ico {
+    background-color: $team-bg-color;
+    border-radius: 4px;
+    height: 120px;
+    margin-top: 0px;
+    margin-bottom: 30px;
 
-  @include createFlex();
+    @include createFlex();
+  }
 }
